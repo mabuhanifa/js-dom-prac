@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: lightgrey;
+  margin-bottom: 50px;
+}
+.mbappe {
+  max-width: 250px;
+  margin-top: 100px;
+}
+.messi {
+  max-width: 150px;
+  margin: 100px 100px 0px 0px;
+}
+.b-title {
+  font-size: 70px;
+  margin-top: 100px;
+  font-style: italic;
+  text-align: center;
+}
+.b-text {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 100px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 0px 100px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.single-player {
+  border: 1px solid lightgray;
+}
+.players img {
+  max-width: 100%;
+}
+.info {
+  padding: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+.info span {
+  padding: 0px 5px;
+  color: grey;
+}
+.info button {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  background-color: rgb(26, 26, 158);
+  color: white;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
