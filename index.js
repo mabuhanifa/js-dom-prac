@@ -8,19 +8,21 @@ const coach = document.getElementById("coach");
 let total = document.getElementById("total");
 const playerList = document.getElementById("playerList");
 
+//array of players
 let selectedPlayer = [];
 let playerExpenses;
 console.log(selectedPlayer);
 
+//select button handler
 function select(player) {
   if (selectedPlayer.includes(player)) {
-    alert(player + " is already selected");
+    alert(player + " is already selected"); // error message
     return;
   }
   if (selectedPlayer.length < 5) {
     selectedPlayer.push(player);
   } else {
-    alert("Can not select more than 5player");
+    alert("Can not select more than 5player"); // error message
     return;
   }
   const dynamicBtn = document.getElementById(player);
@@ -31,6 +33,7 @@ function select(player) {
   dynamicBtn.style.backgroundColor = "gray";
 }
 
+//calculate button handler
 pExpenses.addEventListener("click", function pExpenses(event) {
   event.preventDefault();
   let budget = parseFloat(perPlayer.value);
@@ -38,7 +41,7 @@ pExpenses.addEventListener("click", function pExpenses(event) {
   expenses.innerHTML = "$ " + budget * selectedPlayer.length;
   console.log(budget);
 });
-
+//calculate total button handler
 totalBtn.addEventListener("click", function totalExpense(event) {
   event.preventDefault();
   let managerExpense = parseFloat(manager.value);
