@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- --------------------banner------------------ -->
     <section class="banner">
       <div>
         <img class="mbappe" src="./images/c-mbappe.png" alt="" />
@@ -33,7 +34,9 @@
             <span>36 Goals</span>
             <span>.</span>
             <span>120Assist</span>
-            <button onclick="select('Lionel Messi')" id="messi">Select</button>
+            <button onclick="select('Lionel Messi')" id="Lionel Messi">
+              Select
+            </button>
           </div>
         </div>
         <div class="single-player">
@@ -43,7 +46,7 @@
             <span>36 Goals</span>
             <span>.</span>
             <span>120Assist</span>
-            <button onclick="select('Neymar Jr')" id="neymar">Select</button>
+            <button onclick="select('Neymar Jr')" id="Neymar Jr">Select</button>
           </div>
         </div>
         <div class="single-player">
@@ -53,7 +56,9 @@
             <span>36 Goals</span>
             <span>.</span>
             <span>120Assist</span>
-            <button onclick="select('Sergio Ramos')" id="ramos">Select</button>
+            <button onclick="select('Sergio Ramos')" id="Sergio Ramos">
+              Select
+            </button>
           </div>
         </div>
         <div class="single-player">
@@ -63,7 +68,7 @@
             <span>36 Goals</span>
             <span>.</span>
             <span>120Assist</span>
-            <button onclick="select('Renato Sanches')" id="sanches">
+            <button onclick="select('Renato Sanches')" id="Renato Sanches">
               Select
             </button>
           </div>
@@ -75,7 +80,7 @@
             <span>36 Goals</span>
             <span>.</span>
             <span>120Assist</span>
-            <button onclick="select('Vítor Machado')" id="machado">
+            <button onclick="select('Vítor Machado')" id="Vítor Machado">
               Select
             </button>
           </div>
@@ -83,16 +88,16 @@
         <div class="single-player">
           <img src="./images/mbappe.png" alt="" />
           <div class="info">
-            <h2>Lionel Messi</h2>
+            <h2>Kylian Mbappé</h2>
             <span>36 Goals</span>
             <span>.</span>
             <span>120Assist</span>
-            <button onclick="select('Kylian Mbappé')" id="mbappé">
+            <button onclick="select('Kylian Mbappé')" id="Kylian Mbappé">
               Select
             </button>
           </div>
         </div>
-        <div class="single-player">
+        <!-- <div class="single-player">
           <img src="./images/messi.png" alt="" />
           <div class="info">
             <h2>Lionel Messi</h2>
@@ -121,18 +126,12 @@
             <span>120Assist</span>
             <button onclick="select('Sergio Ramos')" id="ramos">Select</button>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="calculator">
         <div class="selected">
           <h2>Selected-V</h2>
-          <ol>
-            <li>Lionel Messi</li>
-            <li>Lionel Messi</li>
-            <li>Lionel Messi</li>
-            <li>Lionel Messi</li>
-            <li>Lionel Messi</li>
-          </ol>
+          <ol id="playerList"></ol>
         </div>
         <div class="calculate">
           <h2>Budget</h2>
@@ -153,11 +152,11 @@
               type="submit"
               value="Calculate Total"
               class="btn"
-              id="totalExpense"
+              id="totalBtn"
             />
           </form>
 
-          <h4>Total <span id="total"></span></h4>
+          <h4>Total : <span id="total"></span></h4>
         </div>
       </section>
     </section>
