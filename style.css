@@ -6,7 +6,10 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
+body {
+  background-color: rgb(36, 36, 36);
+  color: #fbfbfb;
+}
 .banner {
   display: flex;
   justify-content: space-between;
@@ -58,7 +61,7 @@
 }
 .info span {
   padding: 0px 5px;
-  color: grey;
+  color: #8a8a8a;
 }
 button {
   display: block;
@@ -67,10 +70,11 @@ button {
   cursor: pointer;
   padding: 15px;
   width: 100%;
-  background-color: rgb(26, 26, 158);
+  background-color: #015196;
   color: white;
   text-transform: uppercase;
   margin-top: 25px;
+  font-size: 16px;
 }
 
 .selected {
@@ -113,8 +117,15 @@ label {
   cursor: pointer;
   height: 50px;
   width: 100%;
-  background-color: rgb(26, 26, 158);
+  background-color: #015196;
   color: white;
   text-transform: uppercase;
   margin-top: 25px;
+  font-size: 16px;
+}
+footer p {
+  margin-top: 100px;
+  text-align: center;
+  padding: 50px;
+  border-top: 2px solid gray;
 }
