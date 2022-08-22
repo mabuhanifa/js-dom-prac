@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .banner {
@@ -34,6 +37,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 0px 100px;
+  gap: 20px;
 }
 
 .players {
@@ -56,12 +60,58 @@
   padding: 0px 5px;
   color: grey;
 }
-.info button {
+button {
   display: block;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 15px;
+  width: 100%;
+  background-color: rgb(26, 26, 158);
+  color: white;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.selected {
+  background-color: black;
+  color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+ol {
+  margin: 10px 50px;
+}
+li {
+  padding: 10px 0px;
+}
+.calculate {
+  background-color: black;
+  color: lightgray;
+  padding: 20px;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 50px;
+}
+.calculate h4,
+h2 {
+  margin: 20px 0px;
+}
+
+.calculate input {
+  margin: 20px 0px;
+  padding: 10px;
+}
+label {
+  width: 100%;
+  display: inline-block;
+}
+.btn {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 50px;
   width: 100%;
   background-color: rgb(26, 26, 158);
   color: white;
