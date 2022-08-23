@@ -38,7 +38,7 @@ pExpenses.addEventListener("click", function pExpenses(event) {
   let budget = parseFloat(perPlayer.value);
   playerExpenses = budget * selectedPlayer.length;
   if (!perPlayer.value) {
-    alert("Please enter a value");
+    alert("Please enter a value"); // error message
     return;
   } else {
     expenses.innerHTML = "$ " + budget * selectedPlayer.length;
@@ -46,6 +46,7 @@ pExpenses.addEventListener("click", function pExpenses(event) {
 
   console.log(budget);
 });
+
 //calculate total button handler
 totalBtn.addEventListener("click", function totalExpense(event) {
   event.preventDefault();
@@ -53,7 +54,7 @@ totalBtn.addEventListener("click", function totalExpense(event) {
   let coachExpense = parseFloat(coach.value);
   let allExpense = managerExpense + coachExpense + playerExpenses;
   if (!manager.value || !coach.value) {
-    alert("Please fill every input field with numbers");
+    alert("Please fill every input field with numbers"); // error message
     return;
   } else {
     total.innerHTML = "$ " + allExpense;

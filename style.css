@@ -1,3 +1,4 @@
+/* --------google font--------- */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap");
 
 * {
@@ -6,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+
 body {
   background-color: rgb(36, 36, 36);
   color: #fbfbfb;
