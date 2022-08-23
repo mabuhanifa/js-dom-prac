@@ -11,7 +11,6 @@ const playerList = document.getElementById("playerList");
 //array of players
 let selectedPlayer = [];
 let playerExpenses;
-console.log(selectedPlayer);
 
 //select button handler
 function select(player) {
@@ -22,7 +21,7 @@ function select(player) {
   if (selectedPlayer.length < 5) {
     selectedPlayer.push(player);
   } else {
-    alert("Can not select more than 5player"); // error message
+    alert("Can not select more than 5 player"); // error message
     return;
   }
   const dynamicBtn = document.getElementById(player);
@@ -38,7 +37,13 @@ pExpenses.addEventListener("click", function pExpenses(event) {
   event.preventDefault();
   let budget = parseFloat(perPlayer.value);
   playerExpenses = budget * selectedPlayer.length;
-  expenses.innerHTML = "$ " + budget * selectedPlayer.length;
+  if (!perPlayer.value) {
+    alert("Please enter a value");
+    return;
+  } else {
+    expenses.innerHTML = "$ " + budget * selectedPlayer.length;
+  }
+
   console.log(budget);
 });
 //calculate total button handler
@@ -47,5 +52,10 @@ totalBtn.addEventListener("click", function totalExpense(event) {
   let managerExpense = parseFloat(manager.value);
   let coachExpense = parseFloat(coach.value);
   let allExpense = managerExpense + coachExpense + playerExpenses;
-  total.innerHTML = "$ " + allExpense;
+  if (!manager.value || !coach.value) {
+    alert("Please fill every input field with numbers");
+    return;
+  } else {
+    total.innerHTML = "$ " + allExpense;
+  }
 });
