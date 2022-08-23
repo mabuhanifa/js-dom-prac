@@ -30,6 +30,7 @@ function select(player) {
   li.appendChild(textNode);
   playerList.appendChild(li);
   dynamicBtn.style.backgroundColor = "gray";
+  dynamicBtn.disabled = true;
 }
 
 //calculate button handler
