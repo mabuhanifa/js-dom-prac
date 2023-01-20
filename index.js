@@ -58,6 +58,12 @@ totalBtn.addEventListener("click", function totalExpense(event) {
     alert("Please fill every input field with numbers"); // error message
     return;
   } else {
-    total.innerHTML = "$ " + allExpense;
+    if (playerExpenses) {
+      total.innerHTML = "$ " + allExpense;
+    }
+    else{
+    alert("Please calculate player expenses")
+    }
   }
+  
 });
