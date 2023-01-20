@@ -42,7 +42,11 @@ pExpenses.addEventListener("click", function pExpenses(event) {
     alert("Please enter a value"); // error message
     return;
   } else {
-    expenses.innerHTML = "$ " + budget * selectedPlayer.length;
+    if (selectedPlayer.length) {
+      expenses.innerHTML = "$ " + budget * selectedPlayer.length;
+    } else {
+      alert("Please select some players");
+    }
   }
 
   console.log(budget);
@@ -60,10 +64,8 @@ totalBtn.addEventListener("click", function totalExpense(event) {
   } else {
     if (playerExpenses) {
       total.innerHTML = "$ " + allExpense;
-    }
-    else{
-    alert("Please calculate player expenses")
+    } else {
+      alert("Please calculate player expenses");
     }
   }
-  
 });
